@@ -1,0 +1,8 @@
+language: swift
+xcode_project: VehicleListDemo.xcworkspace
+xcode_scheme: VehicleList
+osx_image: xcode9.3
+xcode_sdk: iphonesimulator11.3
+os: osx
+script:
+- set -o pipefail && xcodebuild -workspace VehicleListDemo.xcworkspace -scheme VehicleListDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=11.3,name=iPhone 7' build test | xcpretty -c --test --color || exit 1

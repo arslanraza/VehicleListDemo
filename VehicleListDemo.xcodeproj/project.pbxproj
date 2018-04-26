@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9924E7904453448E7BDA3160 /* Pods_VehicleListDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF77CF39BCB31658D1D7B4E /* Pods_VehicleListDemoTests.framework */; };
+		A8822B65BFE3712BEB7368FE /* Pods_VehicleListDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3594140D53EF494A1C2FAA /* Pods_VehicleListDemo.framework */; };
 		A8FD49652091D0FC00394597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD49642091D0FC00394597 /* AppDelegate.swift */; };
 		A8FD49672091D0FC00394597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD49662091D0FC00394597 /* ViewController.swift */; };
 		A8FD496A2091D0FC00394597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FD49682091D0FC00394597 /* Main.storyboard */; };
@@ -26,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0199CBD149D6080D3CA28A06 /* Pods-VehicleListDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleListDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleListDemoTests/Pods-VehicleListDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		1A3594140D53EF494A1C2FAA /* Pods_VehicleListDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VehicleListDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22AE1C593F36E0F61BABF2B8 /* Pods-VehicleListDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleListDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleListDemo/Pods-VehicleListDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2DF77CF39BCB31658D1D7B4E /* Pods_VehicleListDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VehicleListDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8279689F98E8A1910BD28BEE /* Pods-VehicleListDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleListDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleListDemo/Pods-VehicleListDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A8FD49612091D0FC00394597 /* VehicleListDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VehicleListDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FD49642091D0FC00394597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FD49662091D0FC00394597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,7 @@
 		A8FD49752091D0FE00394597 /* VehicleListDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VehicleListDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FD49792091D0FE00394597 /* VehicleListDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListDemoTests.swift; sourceTree = "<group>"; };
 		A8FD497B2091D0FE00394597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FE3CDB457A843F041BF5CB /* Pods-VehicleListDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleListDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleListDemoTests/Pods-VehicleListDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8822B65BFE3712BEB7368FE /* Pods_VehicleListDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9924E7904453448E7BDA3160 /* Pods_VehicleListDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		680561F6233E6B53B44A909C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22AE1C593F36E0F61BABF2B8 /* Pods-VehicleListDemo.debug.xcconfig */,
+				8279689F98E8A1910BD28BEE /* Pods-VehicleListDemo.release.xcconfig */,
+				F3FE3CDB457A843F041BF5CB /* Pods-VehicleListDemoTests.debug.xcconfig */,
+				0199CBD149D6080D3CA28A06 /* Pods-VehicleListDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		844AB47424C668DF12241E33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A3594140D53EF494A1C2FAA /* Pods_VehicleListDemo.framework */,
+				2DF77CF39BCB31658D1D7B4E /* Pods_VehicleListDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A8FD49582091D0FC00394597 = {
 			isa = PBXGroup;
 			children = (
 				A8FD49632091D0FC00394597 /* VehicleListDemo */,
 				A8FD49782091D0FE00394597 /* VehicleListDemoTests */,
 				A8FD49622091D0FC00394597 /* Products */,
+				680561F6233E6B53B44A909C /* Pods */,
+				844AB47424C668DF12241E33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8FD497E2091D0FE00394597 /* Build configuration list for PBXNativeTarget "VehicleListDemo" */;
 			buildPhases = (
+				BD9034D3CCCE5D13E1594BEE /* [CP] Check Pods Manifest.lock */,
 				A8FD495D2091D0FC00394597 /* Sources */,
 				A8FD495E2091D0FC00394597 /* Frameworks */,
 				A8FD495F2091D0FC00394597 /* Resources */,
@@ -120,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8FD49812091D0FE00394597 /* Build configuration list for PBXNativeTarget "VehicleListDemoTests" */;
 			buildPhases = (
+				DD95DA3A465B9E5B2BB9C101 /* [CP] Check Pods Manifest.lock */,
 				A8FD49712091D0FE00394597 /* Sources */,
 				A8FD49722091D0FE00394597 /* Frameworks */,
 				A8FD49732091D0FE00394597 /* Resources */,
+				C436082A1788D8406CA9C524 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +226,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD9034D3CCCE5D13E1594BEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VehicleListDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C436082A1788D8406CA9C524 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VehicleListDemoTests/Pods-VehicleListDemoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VehicleListDemoTests/Pods-VehicleListDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD95DA3A465B9E5B2BB9C101 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VehicleListDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8FD495D2091D0FC00394597 /* Sources */ = {
@@ -356,15 +450,13 @@
 		};
 		A8FD497F2091D0FE00394597 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22AE1C593F36E0F61BABF2B8 /* Pods-VehicleListDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KF8AM7J9K;
 				INFOPLIST_FILE = VehicleListDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.VehicleListDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -374,15 +466,13 @@
 		};
 		A8FD49802091D0FE00394597 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8279689F98E8A1910BD28BEE /* Pods-VehicleListDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KF8AM7J9K;
 				INFOPLIST_FILE = VehicleListDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.VehicleListDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -392,17 +482,14 @@
 		};
 		A8FD49822091D0FE00394597 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3FE3CDB457A843F041BF5CB /* Pods-VehicleListDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KF8AM7J9K;
 				INFOPLIST_FILE = VehicleListDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.VehicleListDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -413,17 +500,14 @@
 		};
 		A8FD49832091D0FE00394597 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0199CBD149D6080D3CA28A06 /* Pods-VehicleListDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KF8AM7J9K;
 				INFOPLIST_FILE = VehicleListDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.VehicleListDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
