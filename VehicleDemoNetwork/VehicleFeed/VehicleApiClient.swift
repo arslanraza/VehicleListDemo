@@ -8,10 +8,11 @@
 
 import Foundation
 import VehicleDemoCore
-
+import MapKit
 
 @objc public protocol VehicleService {
   @objc func fetchVehicles(completion: @escaping ([Vehicle], NSError?) -> Void)
+  @objc func fetchVehicles(for region: MKMapRect, completion: @escaping ([Vehicle], NSError?) -> Void)
 }
 
 @objc public class VehicleApiClient: NSObject, APIClient, VehicleService {
@@ -27,7 +28,6 @@ import VehicleDemoCore
   
   // MARK: Public Methods
   
-//  public func fetchVehicles(completion: @escaping (Result<PoiList, APIError>) -> Void) {
   @objc public func fetchVehicles(completion: @escaping ([Vehicle], NSError?) -> Void) {
     let endpoint = VehicleFeed.nearby
     let request = endpoint.request
@@ -41,14 +41,30 @@ import VehicleDemoCore
       switch result {
       case .success(let list):
         completion(list.vehicles, nil)
-        
       case .failure(let error):
         completion([], NSError.from(error))
-        
       }
     })
   }
   
+  @objc public func fetchVehicles(for region: MKMapRect, completion: @escaping ([Vehicle], NSError?) -> Void) {
+    let endpoint = VehicleFeed.forRegion(mapRect: region)
+    let request = endpoint.request
+    
+    fetch(with: request, decode: { json -> PoiList? in
+      guard let result = json as? PoiList else {
+        return  nil
+      }
+      return result
+    }, completion: { result in
+      switch result {
+      case .success(let list):
+        completion(list.vehicles, nil)
+      case .failure(let error):
+        completion([], NSError.from(error))
+      }
+    })
+  }
 }
 
 extension NSError {

@@ -10,6 +10,8 @@
 		8609CD42CDE012DA949429F8 /* Pods_VehicleDemoNetworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E05D99C0DBB3E70D7B0DD14E /* Pods_VehicleDemoNetworkTests.framework */; };
 		9924E7904453448E7BDA3160 /* Pods_VehicleListDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF77CF39BCB31658D1D7B4E /* Pods_VehicleListDemoTests.framework */; };
 		A81AAF3E209217DA00B39DC3 /* VehicleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A81AAF3D209217DA00B39DC3 /* VehicleTableViewCell.m */; };
+		A81AAF412092286B00B39DC3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81AAF402092286B00B39DC3 /* MapViewController.swift */; };
+		A81AAF4320922EA600B39DC3 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81AAF4220922EA600B39DC3 /* MapViewModel.swift */; };
 		A862A11C2091F05700C3968F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A862A11B2091F05700C3968F /* Result.swift */; };
 		A862A11E2091F06000C3968F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A862A11D2091F06000C3968F /* APIError.swift */; };
 		A862A1212091F0AA00C3968F /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A862A1202091F0AA00C3968F /* ResultTests.swift */; };
@@ -110,6 +112,8 @@
 		95A01CBBD5454FC2A75FBB49 /* Pods-VehicleDemoNetworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleDemoNetworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleDemoNetworkTests/Pods-VehicleDemoNetworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		A81AAF3C209217DA00B39DC3 /* VehicleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleTableViewCell.h; sourceTree = "<group>"; };
 		A81AAF3D209217DA00B39DC3 /* VehicleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleTableViewCell.m; sourceTree = "<group>"; };
+		A81AAF402092286B00B39DC3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A81AAF4220922EA600B39DC3 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		A862A11B2091F05700C3968F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A862A11D2091F06000C3968F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		A862A1202091F0AA00C3968F /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
@@ -443,6 +447,7 @@
 		A8FD498B2091D8FB00394597 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A81AAF402092286B00B39DC3 /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 		A8FD498D2091D90900394597 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A81AAF4220922EA600B39DC3 /* MapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -821,8 +827,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A81AAF3E209217DA00B39DC3 /* VehicleTableViewCell.m in Sources */,
+				A81AAF412092286B00B39DC3 /* MapViewController.swift in Sources */,
 				A8FD49672091D0FC00394597 /* ViewController.swift in Sources */,
 				A862A147209207AA00C3968F /* VehicleListViewModel.m in Sources */,
+				A81AAF4320922EA600B39DC3 /* MapViewModel.swift in Sources */,
 				A862A1442092054700C3968F /* VehicleListViewController.m in Sources */,
 				A8FD49652091D0FC00394597 /* AppDelegate.swift in Sources */,
 			);
