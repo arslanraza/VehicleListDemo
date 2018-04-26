@@ -17,7 +17,7 @@ extension VehicleTableViewCell {
     // Center map to the location coordinates
     let location = vehicle.coordinates
     let region = MKCoordinateRegionMakeWithDistance(location, 1000, 1000);
-    mapVIew.setRegion(region, animated: true)
+    mapVIew.setRegion(region, animated: false)
     
     // Adding a pin on the coordinate points
     mapVIew.removeAnnotations(mapVIew.annotations)

@@ -10,6 +10,7 @@ import UIKit
 import Foundation
 import Quick
 import Nimble
+import CoreLocation
 
 @testable import VehicleDemoCore
 
@@ -39,9 +40,12 @@ class PoiListTests: QuickSpec {
             expect(sut?.vehicles.count).to(equal(10))
           })
           
+          let sutCoordinates = sut?.vehicles.first?.coordinates
+          
+          it("should have valid coordinates", closure: {
+            expect(sutCoordinates).notTo(be(kCLLocationCoordinate2DInvalid))
+          })
         })
-        
-        
       })
     }
   }

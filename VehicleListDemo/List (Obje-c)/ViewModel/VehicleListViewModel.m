@@ -42,15 +42,21 @@
   __weak typeof(self) weakSelf = self;
   self.isLoading = YES;
   [self.apiClient fetchVehiclesWithCompletion:^(NSArray<Vehicle *> *vehicles, NSError *error) {
+
     weakSelf.isLoading = NO;
     if (!error) {
       weakSelf.vehicles = vehicles;
       dispatch_async(dispatch_get_main_queue(), ^{
-        weakSelf.completion(YES, nil);
+        if (weakSelf.completion) {
+          weakSelf.completion(YES, nil);
+        }
+        
       });
     } else {
       dispatch_async(dispatch_get_main_queue(), ^{
-        weakSelf.completion(NO, error);
+        if (weakSelf.completion) {
+          weakSelf.completion(NO, error);
+        }
       });
     }
   }];

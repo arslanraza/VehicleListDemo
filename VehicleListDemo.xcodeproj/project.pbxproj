@@ -443,7 +443,6 @@
 		A8FD498A2091D8F100394597 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				A8FD498C2091D90100394597 /* Views */,
 				A8FD498D2091D90900394597 /* ViewModel */,
 				A8FD498B2091D8FB00394597 /* Controllers */,
 			);
@@ -456,13 +455,6 @@
 				A81AAF402092286B00B39DC3 /* MapViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		A8FD498C2091D90100394597 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		A8FD498D2091D90900394597 /* ViewModel */ = {

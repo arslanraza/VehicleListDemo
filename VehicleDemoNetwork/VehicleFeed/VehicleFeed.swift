@@ -31,8 +31,6 @@ extension VehicleFeed: EndPoint {
                URLQueryItem(name: "p2Lat", value: String(boundingBox.min.latitude)),
                URLQueryItem(name: "p2Lon", value: String(boundingBox.min.longitude))]
     }
-    
-    
   }
   
   var base: String {

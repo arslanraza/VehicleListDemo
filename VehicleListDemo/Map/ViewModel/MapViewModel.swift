@@ -17,10 +17,13 @@ class MapViewModel {
   
   var apiClient: VehicleService = VehicleApiClient()
   var onCompletion: Completion?
+  var isLoading: Bool = false
   
   public func refresh(for rect: MKMapRect) {
+    isLoading = true
     apiClient.fetchVehicles(for: rect) { [weak self] (list, error) in
       DispatchQueue.main.async {
+        self?.isLoading = false
         self?.onCompletion?(list, error)
       }
     }

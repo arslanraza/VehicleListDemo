@@ -68,6 +68,4 @@
   return 140.0;
 }
 
-#pragma mark - Public Methods
-
 @end

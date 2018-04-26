@@ -7,6 +7,7 @@ This app displays a list of Vehicles in a tableView and on a map as pins.
 
 * XCode 9.3
 * Minimum iOS Version: 10.0
+* Supports all oritnataions and devices using AutoLayouts
 
 ---
 ## About:
@@ -44,7 +45,7 @@ This app displays a list of Vehicles in a tableView and on a map as pins.
 
 ##### Code Coverage:
 
-* VehicleDemoreNetwork: 68%
+* VehicleDemoreNetwork: 50%
 * VehicleDemoCore: 100%
 
 ## 3rd Party frameworks

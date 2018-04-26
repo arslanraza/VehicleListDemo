@@ -42,12 +42,10 @@ class MapViewController: UIViewController {
   }
   
   private func setupMap() {
-    
     // Center map to the location coordinates (Hamburg)
     let location = CLLocationCoordinate2D(latitude: 53.694865, longitude: 9.757589)
     let region = MKCoordinateRegionMakeWithDistance(location, 15000, 15000);
     mapView.setRegion(region, animated: true)
-    
   }
 }
 
