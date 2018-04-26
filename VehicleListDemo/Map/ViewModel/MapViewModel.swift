@@ -20,7 +20,9 @@ class MapViewModel {
   
   public func refresh(for rect: MKMapRect) {
     apiClient.fetchVehicles(for: rect) { [weak self] (list, error) in
-      self?.onCompletion?(list, error)
+      DispatchQueue.main.async {
+        self?.onCompletion?(list, error)
+      }
     }
   }
   

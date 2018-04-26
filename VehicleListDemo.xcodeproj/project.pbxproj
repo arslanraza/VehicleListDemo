@@ -35,6 +35,8 @@
 		A896FDAF2091E37F00432FD4 /* vehicles.json in Resources */ = {isa = PBXBuildFile; fileRef = A896FDAE2091E37F00432FD4 /* vehicles.json */; };
 		A896FDB22091E44700432FD4 /* PoiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A896FDB12091E44700432FD4 /* PoiList.swift */; };
 		A896FDB42091E6BD00432FD4 /* PoiListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A896FDB32091E6BD00432FD4 /* PoiListTests.swift */; };
+		A8EB5B422092569B0032AD3D /* MKMapView+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB5B412092569B0032AD3D /* MKMapView+Extra.swift */; };
+		A8EB5B44209257380032AD3D /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB5B43209257380032AD3D /* VehicleTableViewCell.swift */; };
 		A8FD49652091D0FC00394597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD49642091D0FC00394597 /* AppDelegate.swift */; };
 		A8FD49672091D0FC00394597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD49662091D0FC00394597 /* ViewController.swift */; };
 		A8FD496A2091D0FC00394597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FD49682091D0FC00394597 /* Main.storyboard */; };
@@ -138,6 +140,8 @@
 		A896FDAE2091E37F00432FD4 /* vehicles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vehicles.json; sourceTree = "<group>"; };
 		A896FDB12091E44700432FD4 /* PoiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiList.swift; sourceTree = "<group>"; };
 		A896FDB32091E6BD00432FD4 /* PoiListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiListTests.swift; sourceTree = "<group>"; };
+		A8EB5B412092569B0032AD3D /* MKMapView+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extra.swift"; sourceTree = "<group>"; };
+		A8EB5B43209257380032AD3D /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
 		A8FD49612091D0FC00394597 /* VehicleListDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VehicleListDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FD49642091D0FC00394597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FD49662091D0FC00394597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -362,7 +366,7 @@
 				A8FD49662091D0FC00394597 /* ViewController.swift */,
 				A8FD49682091D0FC00394597 /* Main.storyboard */,
 				A8FD49882091D7EF00394597 /* Utilities */,
-				A8FD49842091D7C200394597 /* List */,
+				A8FD49842091D7C200394597 /* List (Obje-c) */,
 				A8FD498A2091D8F100394597 /* Map */,
 				A8FD496B2091D0FD00394597 /* Assets.xcassets */,
 				A8FD496D2091D0FD00394597 /* LaunchScreen.storyboard */,
@@ -382,14 +386,14 @@
 			path = VehicleListDemoTests;
 			sourceTree = "<group>";
 		};
-		A8FD49842091D7C200394597 /* List */ = {
+		A8FD49842091D7C200394597 /* List (Obje-c) */ = {
 			isa = PBXGroup;
 			children = (
 				A8FD49872091D7DA00394597 /* Views */,
 				A8FD49862091D7D300394597 /* ViewModel */,
 				A8FD49852091D7CB00394597 /* Controllers */,
 			);
-			path = List;
+			path = "List (Obje-c)";
 			sourceTree = "<group>";
 		};
 		A8FD49852091D7CB00394597 /* Controllers */ = {
@@ -430,6 +434,8 @@
 		A8FD49892091D7EF00394597 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A8EB5B412092569B0032AD3D /* MKMapView+Extra.swift */,
+				A8EB5B43209257380032AD3D /* VehicleTableViewCell.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -826,8 +832,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EB5B422092569B0032AD3D /* MKMapView+Extra.swift in Sources */,
 				A81AAF3E209217DA00B39DC3 /* VehicleTableViewCell.m in Sources */,
 				A81AAF412092286B00B39DC3 /* MapViewController.swift in Sources */,
+				A8EB5B44209257380032AD3D /* VehicleTableViewCell.swift in Sources */,
 				A8FD49672091D0FC00394597 /* ViewController.swift in Sources */,
 				A862A147209207AA00C3968F /* VehicleListViewModel.m in Sources */,
 				A81AAF4320922EA600B39DC3 /* MapViewModel.swift in Sources */,

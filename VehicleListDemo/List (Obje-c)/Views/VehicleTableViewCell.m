@@ -20,7 +20,6 @@
   self.containerView.layer.shadowOffset = CGSizeMake(0.2, 1.2);
   self.containerView.layer.shadowColor = [UIColor blackColor].CGColor;
   
-  
 }
 
 @end

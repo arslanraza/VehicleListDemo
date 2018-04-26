@@ -60,8 +60,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   VehicleTableViewCell *cell = (VehicleTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"VehicleTableViewCell"];
   Vehicle *vehicle = self.viewModel.vehicles[indexPath.row];
-  cell.typeLabel.text = vehicle.type;
-  cell.stateLabel.text = vehicle.state;
+  [cell configureWith:vehicle];
   return cell;
 }
 

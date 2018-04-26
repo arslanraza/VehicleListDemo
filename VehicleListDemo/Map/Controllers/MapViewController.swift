@@ -30,15 +30,13 @@ class MapViewController: UIViewController {
       guard let strongSelf = self else {
         return
       }
-      print("List: \(list)")
-      DispatchQueue.main.async {
-        strongSelf.mapView.removeAnnotations(strongSelf.mapView.annotations)
-        for vehicle in list {
-          // Adding a pin on the coordinate points
-          let annotation = MKPointAnnotation()
-          annotation.coordinate = vehicle.coordinates
-          strongSelf.mapView.addAnnotation(annotation)
-        }
+      
+      strongSelf.mapView.removeAnnotations(strongSelf.mapView.annotations)
+      for vehicle in list {
+        // Adding a pin on the coordinate points
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = vehicle.coordinates
+        strongSelf.mapView.addAnnotation(annotation)
       }
     }
   }
@@ -51,9 +49,6 @@ class MapViewController: UIViewController {
     mapView.setRegion(region, animated: true)
     
   }
-  
-  
-  
 }
 
 extension MapViewController: MKMapViewDelegate {
