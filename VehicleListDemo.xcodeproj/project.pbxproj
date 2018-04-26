@@ -112,6 +112,9 @@
 				A8FD49642091D0FC00394597 /* AppDelegate.swift */,
 				A8FD49662091D0FC00394597 /* ViewController.swift */,
 				A8FD49682091D0FC00394597 /* Main.storyboard */,
+				A8FD49882091D7EF00394597 /* Utilities */,
+				A8FD49842091D7C200394597 /* List */,
+				A8FD498A2091D8F100394597 /* Map */,
 				A8FD496B2091D0FD00394597 /* Assets.xcassets */,
 				A8FD496D2091D0FD00394597 /* LaunchScreen.storyboard */,
 				A8FD49702091D0FE00394597 /* Info.plist */,
@@ -126,6 +129,83 @@
 				A8FD497B2091D0FE00394597 /* Info.plist */,
 			);
 			path = VehicleListDemoTests;
+			sourceTree = "<group>";
+		};
+		A8FD49842091D7C200394597 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A8FD49872091D7DA00394597 /* Views */,
+				A8FD49862091D7D300394597 /* ViewModel */,
+				A8FD49852091D7CB00394597 /* Controllers */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		A8FD49852091D7CB00394597 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A8FD49862091D7D300394597 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8FD49872091D7DA00394597 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8FD49882091D7EF00394597 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A8FD49892091D7EF00394597 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A8FD49892091D7EF00394597 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A8FD498A2091D8F100394597 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A8FD498C2091D90100394597 /* Views */,
+				A8FD498D2091D90900394597 /* ViewModel */,
+				A8FD498B2091D8FB00394597 /* Controllers */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A8FD498B2091D8FB00394597 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A8FD498C2091D90100394597 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8FD498D2091D90900394597 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,7 +536,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KF8AM7J9K;
 				INFOPLIST_FILE = VehicleListDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.VehicleListDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -472,7 +555,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KF8AM7J9K;
 				INFOPLIST_FILE = VehicleListDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.VehicleListDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -489,7 +575,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KF8AM7J9K;
 				INFOPLIST_FILE = VehicleListDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.VehicleListDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -507,7 +597,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KF8AM7J9K;
 				INFOPLIST_FILE = VehicleListDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.VehicleListDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
