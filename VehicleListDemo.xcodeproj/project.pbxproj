@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		8609CD42CDE012DA949429F8 /* Pods_VehicleDemoNetworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E05D99C0DBB3E70D7B0DD14E /* Pods_VehicleDemoNetworkTests.framework */; };
 		9924E7904453448E7BDA3160 /* Pods_VehicleListDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF77CF39BCB31658D1D7B4E /* Pods_VehicleListDemoTests.framework */; };
+		A862A11C2091F05700C3968F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A862A11B2091F05700C3968F /* Result.swift */; };
+		A862A11E2091F06000C3968F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A862A11D2091F06000C3968F /* APIError.swift */; };
+		A862A1212091F0AA00C3968F /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A862A1202091F0AA00C3968F /* ResultTests.swift */; };
+		A862A1232091F0B300C3968F /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A862A1222091F0B300C3968F /* APIErrorTests.swift */; };
 		A8822B65BFE3712BEB7368FE /* Pods_VehicleListDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3594140D53EF494A1C2FAA /* Pods_VehicleListDemo.framework */; };
 		A896FDAF2091E37F00432FD4 /* vehicles.json in Resources */ = {isa = PBXBuildFile; fileRef = A896FDAE2091E37F00432FD4 /* vehicles.json */; };
 		A896FDB22091E44700432FD4 /* PoiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A896FDB12091E44700432FD4 /* PoiList.swift */; };
@@ -19,7 +23,6 @@
 		A8FD496C2091D0FD00394597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8FD496B2091D0FD00394597 /* Assets.xcassets */; };
 		A8FD496F2091D0FD00394597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FD496D2091D0FD00394597 /* LaunchScreen.storyboard */; };
 		A8FD49B02091DB1900394597 /* VehicleDemoNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FD49A72091DB1900394597 /* VehicleDemoNetwork.framework */; };
-		A8FD49B72091DB1900394597 /* VehicleDemoNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD49B62091DB1900394597 /* VehicleDemoNetworkTests.swift */; };
 		A8FD49B92091DB1900394597 /* VehicleDemoNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = A8FD49A92091DB1900394597 /* VehicleDemoNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8FD49BC2091DB1900394597 /* VehicleDemoNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FD49A72091DB1900394597 /* VehicleDemoNetwork.framework */; };
 		A8FD49BD2091DB1900394597 /* VehicleDemoNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8FD49A72091DB1900394597 /* VehicleDemoNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -89,6 +92,10 @@
 		2DF77CF39BCB31658D1D7B4E /* Pods_VehicleListDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VehicleListDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8279689F98E8A1910BD28BEE /* Pods-VehicleListDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleListDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleListDemo/Pods-VehicleListDemo.release.xcconfig"; sourceTree = "<group>"; };
 		95A01CBBD5454FC2A75FBB49 /* Pods-VehicleDemoNetworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleDemoNetworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleDemoNetworkTests/Pods-VehicleDemoNetworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		A862A11B2091F05700C3968F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A862A11D2091F06000C3968F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		A862A1202091F0AA00C3968F /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
+		A862A1222091F0B300C3968F /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
 		A896FDAE2091E37F00432FD4 /* vehicles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vehicles.json; sourceTree = "<group>"; };
 		A896FDB12091E44700432FD4 /* PoiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiList.swift; sourceTree = "<group>"; };
 		A896FDB32091E6BD00432FD4 /* PoiListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiListTests.swift; sourceTree = "<group>"; };
@@ -105,7 +112,6 @@
 		A8FD49A92091DB1900394597 /* VehicleDemoNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleDemoNetwork.h; sourceTree = "<group>"; };
 		A8FD49AA2091DB1900394597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8FD49AF2091DB1900394597 /* VehicleDemoNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VehicleDemoNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8FD49B62091DB1900394597 /* VehicleDemoNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDemoNetworkTests.swift; sourceTree = "<group>"; };
 		A8FD49B82091DB1900394597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8FD49C92091DB2800394597 /* VehicleDemoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VehicleDemoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FD49CB2091DB2800394597 /* VehicleDemoCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleDemoCore.h; sourceTree = "<group>"; };
@@ -182,6 +188,38 @@
 				E05D99C0DBB3E70D7B0DD14E /* Pods_VehicleDemoNetworkTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A862A1182091F02600C3968F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A862A11B2091F05700C3968F /* Result.swift */,
+				A862A11D2091F06000C3968F /* APIError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A862A1192091F03500C3968F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A862A11A2091F03B00C3968F /* VehicleFeed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VehicleFeed;
+			sourceTree = "<group>";
+		};
+		A862A11F2091F09400C3968F /* NetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				A862A1202091F0AA00C3968F /* ResultTests.swift */,
+				A862A1222091F0B300C3968F /* APIErrorTests.swift */,
+			);
+			path = NetworkTests;
 			sourceTree = "<group>";
 		};
 		A896FDAA2091E33F00432FD4 /* VehicleListDemo */ = {
@@ -261,8 +299,8 @@
 		A8FD49782091D0FE00394597 /* VehicleListDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				A896FDAB2091E35100432FD4 /* VehicleDemoCoreTests */,
 				A896FDAA2091E33F00432FD4 /* VehicleListDemo */,
+				A896FDAB2091E35100432FD4 /* VehicleDemoCoreTests */,
 				A8FD497B2091D0FE00394597 /* Info.plist */,
 			);
 			path = VehicleListDemoTests;
@@ -348,6 +386,9 @@
 		A8FD49A82091DB1900394597 /* VehicleDemoNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				A862A1182091F02600C3968F /* Network */,
+				A862A11A2091F03B00C3968F /* VehicleFeed */,
+				A862A1192091F03500C3968F /* Protocol */,
 				A8FD49A92091DB1900394597 /* VehicleDemoNetwork.h */,
 				A8FD49AA2091DB1900394597 /* Info.plist */,
 			);
@@ -357,7 +398,7 @@
 		A8FD49B52091DB1900394597 /* VehicleDemoNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				A8FD49B62091DB1900394597 /* VehicleDemoNetworkTests.swift */,
+				A862A11F2091F09400C3968F /* NetworkTests */,
 				A8FD49B82091DB1900394597 /* Info.plist */,
 			);
 			path = VehicleDemoNetworkTests;
@@ -521,6 +562,7 @@
 					};
 					A8FD49A62091DB1900394597 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					A8FD49AE2091DB1900394597 = {
 						CreatedOnToolsVersion = 9.3;
@@ -715,6 +757,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A862A11C2091F05700C3968F /* Result.swift in Sources */,
+				A862A11E2091F06000C3968F /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,7 +766,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8FD49B72091DB1900394597 /* VehicleDemoNetworkTests.swift in Sources */,
+				A862A1232091F0B300C3968F /* APIErrorTests.swift in Sources */,
+				A862A1212091F0AA00C3968F /* ResultTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -986,6 +1031,7 @@
 		A8FD49BF2091DB1900394597 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1005,6 +1051,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.VehicleDemoNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1015,6 +1062,7 @@
 		A8FD49C02091DB1900394597 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
