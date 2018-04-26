@@ -34,6 +34,20 @@
                ReferencedContainer = "container:VehicleListDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A8FD49AE2091DB1900394597"
+               BuildableName = "VehicleDemoNetworkTests.xctest"
+               BlueprintName = "VehicleDemoNetworkTests"
+               ReferencedContainer = "container:VehicleListDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "A8FD49742091D0FE00394597"
                BuildableName = "VehicleListDemoTests.xctest"
                BlueprintName = "VehicleListDemoTests"
+               ReferencedContainer = "container:VehicleListDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A8FD49AE2091DB1900394597"
+               BuildableName = "VehicleDemoNetworkTests.xctest"
+               BlueprintName = "VehicleDemoNetworkTests"
                ReferencedContainer = "container:VehicleListDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>

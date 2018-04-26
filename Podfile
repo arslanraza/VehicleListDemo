@@ -16,4 +16,9 @@ target 'VehicleListDemo' do
     test_pods
   end
 
+  target 'VehicleDemoNetworkTests' do
+    inherit! :search_paths
+    # Pods for testing
+    test_pods
+  end
 end
