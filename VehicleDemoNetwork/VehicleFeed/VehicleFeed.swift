@@ -13,6 +13,17 @@ public enum VehicleFeed {
 }
 
 extension VehicleFeed: EndPoint {
+  
+  var queryItem: [URLQueryItem] {
+    switch self {
+    case .nearby:
+      return [ URLQueryItem(name: "p1lat", value: "53.694865"),
+      URLQueryItem(name: "p1lont", value: "9.757589"),
+      URLQueryItem(name: "p2lat", value: "53.394655"),
+      URLQueryItem(name: "p2lon", value: "10.099891")]
+    }
+  }
+  
   var base: String {
     return "https://poi-api.mytaxi.com"
   }
@@ -23,7 +34,7 @@ extension VehicleFeed: EndPoint {
     
     switch self {
     case .nearby:
-      return pathPrefix.appending("")
+      return pathPrefix
     }
   }
 }

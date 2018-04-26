@@ -26,6 +26,7 @@
 		A862A13D2091F8B100C3968F /* VehicleFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A862A13C2091F8B100C3968F /* VehicleFeed.swift */; };
 		A862A13F2091FA1E00C3968F /* VehicleApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A862A13E2091FA1E00C3968F /* VehicleApiClient.swift */; };
 		A862A1402091FA4300C3968F /* VehicleDemoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FD49C92091DB2800394597 /* VehicleDemoCore.framework */; };
+		A862A1442092054700C3968F /* VehicleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A862A1432092054700C3968F /* VehicleListViewController.m */; };
 		A8822B65BFE3712BEB7368FE /* Pods_VehicleListDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3594140D53EF494A1C2FAA /* Pods_VehicleListDemo.framework */; };
 		A896FDAF2091E37F00432FD4 /* vehicles.json in Resources */ = {isa = PBXBuildFile; fileRef = A896FDAE2091E37F00432FD4 /* vehicles.json */; };
 		A896FDB22091E44700432FD4 /* PoiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A896FDB12091E44700432FD4 /* PoiList.swift */; };
@@ -121,6 +122,9 @@
 		A862A13A2091F86800C3968F /* VehicleFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleFeedTests.swift; sourceTree = "<group>"; };
 		A862A13C2091F8B100C3968F /* VehicleFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleFeed.swift; sourceTree = "<group>"; };
 		A862A13E2091FA1E00C3968F /* VehicleApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleApiClient.swift; sourceTree = "<group>"; };
+		A862A1412092054700C3968F /* VehicleListDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VehicleListDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		A862A1422092054700C3968F /* VehicleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleListViewController.h; sourceTree = "<group>"; };
+		A862A1432092054700C3968F /* VehicleListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleListViewController.m; sourceTree = "<group>"; };
 		A896FDAE2091E37F00432FD4 /* vehicles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vehicles.json; sourceTree = "<group>"; };
 		A896FDB12091E44700432FD4 /* PoiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiList.swift; sourceTree = "<group>"; };
 		A896FDB32091E6BD00432FD4 /* PoiListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiListTests.swift; sourceTree = "<group>"; };
@@ -352,6 +356,7 @@
 				A8FD498A2091D8F100394597 /* Map */,
 				A8FD496B2091D0FD00394597 /* Assets.xcassets */,
 				A8FD496D2091D0FD00394597 /* LaunchScreen.storyboard */,
+				A862A1412092054700C3968F /* VehicleListDemo-Bridging-Header.h */,
 				A8FD49702091D0FE00394597 /* Info.plist */,
 			);
 			path = VehicleListDemo;
@@ -380,6 +385,8 @@
 		A8FD49852091D7CB00394597 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A862A1422092054700C3968F /* VehicleListViewController.h */,
+				A862A1432092054700C3968F /* VehicleListViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -617,6 +624,7 @@
 				TargetAttributes = {
 					A8FD49602091D0FC00394597 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					A8FD49742091D0FE00394597 = {
 						CreatedOnToolsVersion = 9.3;
@@ -803,6 +811,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8FD49672091D0FC00394597 /* ViewController.swift in Sources */,
+				A862A1442092054700C3968F /* VehicleListViewController.m in Sources */,
 				A8FD49652091D0FC00394597 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1024,6 +1033,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KF8AM7J9K;
 				INFOPLIST_FILE = VehicleListDemo/Info.plist;
@@ -1033,6 +1043,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.VehicleListDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VehicleListDemo/VehicleListDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1044,6 +1056,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KF8AM7J9K;
 				INFOPLIST_FILE = VehicleListDemo/Info.plist;
@@ -1053,6 +1066,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.VehicleListDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VehicleListDemo/VehicleListDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
