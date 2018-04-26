@@ -50,7 +50,7 @@
       });
     } else {
       dispatch_async(dispatch_get_main_queue(), ^{
-        weakSelf.completion(NO, nil);
+        weakSelf.completion(NO, error);
       });
     }
   }];

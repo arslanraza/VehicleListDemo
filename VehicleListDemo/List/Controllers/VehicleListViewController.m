@@ -8,11 +8,15 @@
 
 #import "VehicleListViewController.h"
 #import "VehicleListViewModel.h"
+#import "VehicleTableViewCell.h"
 
-@interface VehicleListViewController () <UITableViewDataSource>
+#import <VehicleDemoCore/VehicleDemoCore.h>
+
+#import "VehicleListDemo-Swift.h"
+
+@interface VehicleListViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
-
 @property (nonatomic, strong) IBOutlet VehicleListViewModel *viewModel;
 
 @end
@@ -41,19 +45,28 @@
       UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error"
                                                                      message:error.localizedDescription
                                                               preferredStyle:UIAlertControllerStyleAlert];
+      [alert addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil]];
       [weakSelf presentViewController:alert animated:YES completion:nil];
     }
   };
 }
 
-#pragma mark - UITableViewDataSource Methods
+#pragma mark - UITableViewDataSource & Delegate Methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
   return self.viewModel.numberOfRows;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  return [UITableViewCell new];
+  VehicleTableViewCell *cell = (VehicleTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"VehicleTableViewCell"];
+  Vehicle *vehicle = self.viewModel.vehicles[indexPath.row];
+  cell.typeLabel.text = vehicle.type;
+  cell.stateLabel.text = vehicle.state;
+  return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+  return 140.0;
 }
 
 #pragma mark - Public Methods

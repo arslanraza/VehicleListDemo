@@ -13,6 +13,14 @@
 - (void)awakeFromNib {
   [super awakeFromNib];
   
+  self.mapVIew.layer.cornerRadius = 4;
+  self.containerView.layer.cornerRadius = 8;
+  self.containerView.layer.borderColor = [[[UIColor lightGrayColor] colorWithAlphaComponent:0.4] CGColor];
+  self.containerView.layer.borderWidth = 1.0;
+  self.containerView.layer.shadowOffset = CGSizeMake(0.2, 1.2);
+  self.containerView.layer.shadowColor = [UIColor blackColor].CGColor;
+  
+  
 }
 
 @end

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@import MapKit;
 
 @interface VehicleTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet MKMapView *mapVIew;
+@property (weak, nonatomic) IBOutlet UILabel *typeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *stateLabel;
 
 @end
