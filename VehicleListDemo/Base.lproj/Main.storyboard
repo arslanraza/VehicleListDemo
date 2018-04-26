@@ -26,7 +26,7 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="PE1-yS-h1y"/>
-                                            <constraint firstAttribute="width" constant="198" id="epf-T9-t5C"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="198" id="epf-T9-t5C"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <state key="normal" title="List">
@@ -40,7 +40,7 @@
                                         <rect key="frame" x="0.0" y="58" width="198" height="38"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="198" id="0Ji-Hn-58H"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="198" id="0Ji-Hn-58H"/>
                                             <constraint firstAttribute="height" constant="38" id="Llv-Kk-LjV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
@@ -74,10 +74,29 @@
                     <view key="view" contentMode="scaleToFill" id="1oI-gJ-QPr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PwF-ha-x3J">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="GGL-vS-9hC" id="Nqu-98-d3A"/>
+                                    <outlet property="delegate" destination="GGL-vS-9hC" id="4Hp-oE-qkg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PwF-ha-x3J" firstAttribute="leading" secondItem="nKq-lb-BFf" secondAttribute="leading" id="M6m-h9-B2J"/>
+                            <constraint firstItem="nKq-lb-BFf" firstAttribute="trailing" secondItem="PwF-ha-x3J" secondAttribute="trailing" id="kSl-Hs-8vw"/>
+                            <constraint firstItem="PwF-ha-x3J" firstAttribute="top" secondItem="nKq-lb-BFf" secondAttribute="top" id="sSW-8g-jcD"/>
+                            <constraint firstItem="nKq-lb-BFf" firstAttribute="bottom" secondItem="PwF-ha-x3J" secondAttribute="bottom" id="y5Q-pF-mQG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nKq-lb-BFf"/>
                     </view>
                     <navigationItem key="navigationItem" title="List" id="SEl-lq-WXQ"/>
+                    <connections>
+                        <outlet property="tableView" destination="PwF-ha-x3J" id="RnF-Hu-doi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbS-dL-TKv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

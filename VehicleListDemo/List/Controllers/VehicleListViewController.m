@@ -7,31 +7,55 @@
 //
 
 #import "VehicleListViewController.h"
+#import "VehicleListViewModel.h"
 
-@interface VehicleListViewController ()
+@interface VehicleListViewController () <UITableViewDataSource>
+
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong) IBOutlet VehicleListViewModel *viewModel;
 
 @end
 
 @implementation VehicleListViewController
 
+#pragma mark - Life Cycle Methods
+
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  [super viewDidLoad];
+  
+  self.viewModel = [VehicleListViewModel new];
+  
+  [self setupObservers];
+  [self.viewModel refresh];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Private Methods
+
+- (void)setupObservers {
+  __weak typeof(self) weakSelf = self;
+  self.viewModel.completion = ^(BOOL success, NSError *error) {
+    if (success) {
+      [weakSelf.tableView reloadData];
+    } else {
+      UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                     message:error.localizedDescription
+                                                              preferredStyle:UIAlertControllerStyleAlert];
+      [weakSelf presentViewController:alert animated:YES completion:nil];
+    }
+  };
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UITableViewDataSource Methods
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+  return self.viewModel.numberOfRows;
 }
-*/
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  return [UITableViewCell new];
+}
+
+#pragma mark - Public Methods
 
 @end
