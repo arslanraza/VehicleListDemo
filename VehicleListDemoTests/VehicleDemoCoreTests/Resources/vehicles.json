@@ -1,0 +1,104 @@
+{
+  "poiList": [
+              {
+              "id": 2028341943,
+              "coordinate": {
+              "latitude": 53.561915255426086,
+              "longitude": 9.989988394081593
+              },
+              "state": "ACTIVE",
+              "type": "TAXI",
+              "heading": 357.0501708984375
+              },
+              {
+              "id": -2112012354,
+              "coordinate": {
+              "latitude": 53.55036663224964,
+              "longitude": 9.969772584736347
+              },
+              "state": "ACTIVE",
+              "type": "TAXI",
+              "heading": 20.296268463134766
+              },
+              {
+              "id": -1302077524,
+              "coordinate": {
+              "latitude": 53.565390677238426,
+              "longitude": 9.989021122455597
+              },
+              "state": "ACTIVE",
+              "type": "TAXI",
+              "heading": 350.856689453125
+              },
+              {
+              "id": -492211311,
+              "coordinate": {
+              "latitude": 53.54937444086767,
+              "longitude": 9.967428669333458
+              },
+              "state": "ACTIVE",
+              "type": "TAXI",
+              "heading": 352.587890625
+              },
+              {
+              "id": -1965009246,
+              "coordinate": {
+              "latitude": 53.55622628195387,
+              "longitude": 9.975122921168804
+              },
+              "state": "ACTIVE",
+              "type": "TAXI",
+              "heading": 42.95459151111277
+              },
+              {
+              "id": -2040011904,
+              "coordinate": {
+              "latitude": 53.55459429000407,
+              "longitude": 9.981502555310726
+              },
+              "state": "ACTIVE",
+              "type": "TAXI",
+              "heading": 139.63546342690265
+              },
+              {
+              "id": 286161881,
+              "coordinate": {
+              "latitude": 53.571383,
+              "longitude": 9.9661516
+              },
+              "state": "ACTIVE",
+              "type": "TAXI",
+              "heading": 0.0
+              },
+              {
+              "id": 1891334866,
+              "coordinate": {
+              "latitude": 53.541131441065225,
+              "longitude": 9.99372873455286
+              },
+              "state": "ACTIVE",
+              "type": "TAXI",
+              "heading": 0.0
+              },
+              {
+              "id": -1664065182,
+              "coordinate": {
+              "latitude": 53.554289952591304,
+              "longitude": 9.94877390563488
+              },
+              "state": "ACTIVE",
+              "type": "TAXI",
+              "heading": 96.05492624826508
+              },
+              {
+              "id": 1465809692,
+              "coordinate": {
+              "latitude": 53.554533741373874,
+              "longitude": 9.90093369036913
+              },
+              "state": "ACTIVE",
+              "type": "TAXI",
+              "heading": 0.0
+              }
+              ]
+}

@@ -54,7 +54,32 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A8FD49C82091DB2800394597"
+            BuildableName = "VehicleDemoCore.framework"
+            BlueprintName = "VehicleDemoCore"
+            ReferencedContainer = "container:VehicleListDemo.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A8FD49A62091DB1900394597"
+            BuildableName = "VehicleDemoNetwork.framework"
+            BlueprintName = "VehicleDemoNetwork"
+            ReferencedContainer = "container:VehicleListDemo.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A8FD49602091D0FC00394597"
+            BuildableName = "VehicleListDemo.app"
+            BlueprintName = "VehicleListDemo"
+            ReferencedContainer = "container:VehicleListDemo.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
