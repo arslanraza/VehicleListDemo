@@ -36,7 +36,7 @@ class PoiListTests: QuickSpec {
             expect(sut).notTo(beNil())
           })
           
-          it("should have 5 elements", closure: {
+          it("should have 10 elements", closure: {
             expect(sut?.vehicles.count).to(equal(10))
           })
           
